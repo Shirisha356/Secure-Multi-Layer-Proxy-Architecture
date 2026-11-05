@@ -1,0 +1,36 @@
+
+_format_version: "3.0"
+_transform: true
+
+services:
+
+  - name: user-service
+    url: http://users:8000
+    routes:
+      - name: user-route
+        paths:
+          - /api/users
+        strip_path: true
+
+  - name: order-service
+    url: http://orders:8000
+    routes:
+      - name: order-route
+        paths:
+          - /api/orders
+        strip_path: true
+
+  - name: payment-service
+    url: http://payments:8000
+    routes:
+      - name: payment-route
+        paths:
+          - /api/payments
+        strip_path: true
+
+plugins:
+
+  - name: rate-limiting
+    config:
+      minute: 10
+      policy: local
