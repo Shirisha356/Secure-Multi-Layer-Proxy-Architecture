@@ -1,4 +1,4 @@
-# Secure-Multi-Layer-Proxy-Architecture
+
 # Secure Multi-Layer Proxy Architecture
 
 A hands-on DevOps project demonstrating secure network segmentation, forward and reverse proxying, load balancing, API gateway routing, containerized microservices, failure recovery, and monitoring using Docker Compose.
@@ -392,9 +392,5 @@ Potential improvements include:
 - Add automated CI/CD using GitHub Actions.
 - Improve service-level network isolation and security hardening.
 
-## 14. Author
 
-**Project:** Secure Multi-Layer Proxy Architecture  
-**Category:** DevOps / Docker / Networking / Monitoring  
-**Environment:** Docker Desktop on Windows
 
