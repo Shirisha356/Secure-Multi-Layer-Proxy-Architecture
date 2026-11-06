@@ -420,3 +420,28 @@ Potential improvements include:
 
 
 >>>>>>> origin/main
+
+## AWS Deployment
+
+The Secure Multi-Layer Proxy Architecture was deployed on Amazon Web Services (AWS) using Amazon EC2 and Docker Compose.
+
+**AWS Region:** Mumbai (`ap-south-1`)
+
+### AWS Infrastructure
+- Amazon VPC with public and private subnets.
+- Internet Gateway and route tables.
+- Amazon EC2 (`t3.micro`).
+- Docker-based HAProxy, Nginx, Kong API Gateway and backend microservices.
+- Security Group configuration for controlled access.
+
+### AWS Documentation
+
+| Document | Description |
+|---|---|
+| [AWS Deployment Guide](docs/aws-deployment/AWS_DEPLOYMENT_GUIDE.md) | AWS setup and deployment steps |
+| [AWS Architecture](docs/aws-deployment/AWS_ARCHITECTURE.md) | Infrastructure and request-flow diagram |
+| [AWS Test Results](docs/aws-deployment/AWS_TEST_RESULTS.md) | API validation and failure testing |
+| [AWS Cleanup Guide](docs/aws-deployment/AWS_CLEANUP.md) | AWS resource cleanup instructions |
+| [AWS Command Reference](AWS_DEPLOYMENT_COMMANDS_FROM_BEGINNING_TO_END.md) | Commands used throughout the project |
+
+**Note:** This was a learning deployment on a single EC2 instance. Monitoring services and private-subnet application workloads were not deployed on AWS.
